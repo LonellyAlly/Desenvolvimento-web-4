@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Sprint 4 - DOM e Eventos</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        /* Classes que serão adicionadas via JavaScript */
+        .destaque { font-weight: bold; color: #d9534f; }
+        .feito { text-decoration: line-through; color: #888; }
+        
+        .container { margin-bottom: 20px; padding: 15px; border: 1px solid #ccc; border-radius: 5px; }
+        li { cursor: pointer; padding: 5px; }
+        li:hover { background-color: #f0f0f0; }
+    </style>
+</head>
+<body>
+
+    <h1 id="titulo">Título Original</h1>
+    
+    <div class="container">
+        <p class="texto">Este é o primeiro parágrafo de texto.</p>
+        <p class="texto">Este é o segundo parágrafo, servindo para testes do querySelectorAll.</p>
+    </div>
+
+    <div class="container">
+        <h3>Lista de Elementos (Event Delegation)</h3>
+        <!-- 3 itens iniciais exigidos no HTML -->
+        <ul id="lista">
+            <li>Item HTML 1</li>
+            <li>Item HTML 2</li>
+            <li>Item HTML 3</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3>Testes de Eventos</h3>
+        <button id="botao">Passe o mouse ou clique!</button>
+        <br><br>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Digite seu nome (keyup)">
+    </div>
+
+    <div class="container">
+        <h3>Adicionar Nova Tarefa</h3>
+        <form id="formulario">
+            <input type="text" id="tarefa" placeholder="Nova tarefa...">
+            <button type="submit">Adicionar</button>
+        </form>
+    </div>
+
+    <!-- O script deve sempre ser carregado no final do body -->
+    <script src="app.js"></script>
+</body>
+</html>
